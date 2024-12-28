@@ -46,6 +46,7 @@ color: aqua;}
     border-radius: 2px;
     text-align: center;
     font-size: 16px;
+    display: block;
 }
 
 .dropdown a{
@@ -78,4 +79,30 @@ color: aqua;}
 .dropdown a:hover{
     background-color: rgba(76, 69, 69, 0.6);
     transition: 0.4s ease-in-out;
+    display: block;
+}
+
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border: 2px solid;
+    text-align: center;
+    transform: translateX(50px) rotateZ(45deg);
+    animation-name: left;
+    animation-duration: 5s;
+}
+
+@keyframes slideleft{
+    from{ transform: translateX(200%);}
+}
+
+@keyframes slideRight{
+    from{ transform: translateX(200%);}
+}
+    
+
+.box1 .h1{
+    font-size: 16em;
+   
 }
