@@ -141,4 +141,56 @@ else if(celcius.checked) {
 
 else {conResult.textContent = "select a unit"}}
 
+
+
+const noDice = document.getElementById("noDice").value ;
+const btnn = document.getElementById("btnn");
+const diceResult = document.getElementById("diceResult");
+const imageResult = document.getElementById("imageResult");
+     function rollDice() {
+        let values = [];
+        let images = [];
+        diceResult.textContent = "";
+        imageResult.innerHTML = "";
     
+        for(let i = 0; i < noDice; i++){
+            const value = Math.floor(Math.random() * 6) + 1;
+            values.push(value);
+            images.push(`<img src="DICE/DICE${value}.jpeg" alt="Dice ${value}">`);
+        }
+    
+        diceResult.textContent = "Dice Result: " + values.join(", ");
+        imageResult.innerHTML = images.join("");
+    }
+
+        
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
